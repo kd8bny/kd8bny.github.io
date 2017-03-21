@@ -1,0 +1,16 @@
+---
+layout: post
+title: Ouch!!! I broke Unity/How to fix it
+date: '2013-06-09T17:34:00.000-07:00'
+author: Daryl Bennett
+tags:
+- Unity
+- raring
+- Ubuntu
+- linux
+modified_time: '2013-06-09T17:34:33.286-07:00'
+blogger_id: tag:blogger.com,1999:blog-7621217468312732627.post-7077249714923485419
+blogger_orig_url: http://kd8bny.blogspot.com/2013/06/ouch-i-broke-unityhow-to-fix-it.html
+---
+
+So as many of you know the dangers of playing with graphic drivers in Linux. They have to potential to render your desktop useless. In fact many remain with open source drivers for this very reason. Well anyway I have been playing around with AMD drivers for the last month and has proven to be a miserable feat. More then once this has rendered Unity broken missing both window decorators and system panels&nbsp; *weep. To top it all off the Unity plug-in would become disabled from Compiz and would not re-enable for multiple reasons. (Open gl, window shutters, ...blah blah)<br /><br />Anyway.......<br />Unity malfunction is not exclusive to graphic driver installations. For this reason I think it is important to know these following 2 commands.<br /><blockquote class="tr_bq"><span style="font-family: &quot;Courier New&quot;, Courier, monospace;"><span style="font-size: x-small;">sudo dconf reset -f /org/compiz/</span></span></blockquote>This command resets all dconf settings that may have changed. "dconf" Is a program for editing all of your configuration files. If by chance you are missing this program run the following command.<br /><blockquote class="tr_bq"><span style="font-family: &quot;Courier New&quot;, Courier, monospace;"><span style="font-size: x-small;">sudo apt-get install dconf-tools</span></span></blockquote>The second Unity command I believe should be general knowledge is:<br /><blockquote class="tr_bq"><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;unity --reset-icons &amp;disown</span></span></blockquote>This command may not need to be run after dconf, However it is extremely useful if one decides to play with themes or other basic UI improvements.<br /><br /><br /><br />I hope these are useful to you. I also hope you will never need them haha.<br /><br />================================================= <br />Next I would like to do another write-up on helpful ssh tools including scp and nmap. On another note maybe dd and pv; pretty much anything I find useful and use on an almost daily basis.<br /><br />Let me know if there is any particular command you would want a write-up on. 
