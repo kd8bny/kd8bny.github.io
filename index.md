@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Welcome to devRambling
-Soon to be the new home for my side projects and cool tips and tricks I've learned over the years. This site is in progress but here are some links for the time being. Check out tht top bat links for the pages to come.
+Soon to be the new home for my side projects and cool tips and tricks I've learned over the years. This site is in progress but here are some links for the time being. Check out the topbar links for the pages to come.
 
 
 ## Some of the newest side projects
