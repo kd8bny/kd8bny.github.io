@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1>Welcome to devRambling</h1>
+<p>
+    Soon to be the new home for my side projects and cool tips and tricks I've learned over the years. 
+    This site is in progress but here are some links for the time being. Check out the topbar links for the pages to come.
+</p>
+
+<h2>Feautured Posts</h2>
+
+<div class="recentBlogs">
+{% for post in site.posts limit:1 %}
+  <div class="blog">
+    <div class="image"><img src="{{ post.thumbnail }}"></div>
+     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+     {{ post.date }}
+     <p>{{ post.excerpt }}</p>
+  </div>
+{% endfor %}
+</div>
+
+<h2>Current Projects</h2>
+
+<div class="recentProjects">
+    <a class="post-link" href="https://github.com/kd8bny/maintenanceMan">MaintenanceMan</a>
+    <p>Android application designed for simple traking of vehicle maintenance</p>
+    
+    <a class="post-link" href="https://kd8bny.github.io/LiMEaide/">LiMEaide</a>
+    <p>A python application designed to remotely dump RAM of a Linux client and create a volatility profile for later analysis on your local host</p>
+    
+    <a class="post-link" href="https://github.com/kd8bny/cumulus">Cumulus</a>
+    <p>Quickly check the weather with this stylish web app based on Stormcloud</p>
+</div>
